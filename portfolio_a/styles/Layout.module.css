@@ -30,7 +30,7 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -73,9 +73,11 @@
 .name {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  color: #848383;
 }
 
 .introduction {
   font-size: 1.2rem;
   margin-bottom: 0;
+  color: #848383;
 }

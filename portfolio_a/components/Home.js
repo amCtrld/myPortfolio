@@ -1,13 +1,17 @@
-import styles from '../styles/Home.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.home}>
-      <h1 className={styles.motivationalStatement}>Turning Ideas into Reality</h1>
-      <h2 className={styles.name}>Peter Mbugua</h2>
-      <p className={styles.introduction}>
-        JavaScript Developer | <span className={styles.alias}>Codmous</span>
-      </p>
+      <FontAwesomeIcon icon={faQuoteLeft} className={styles.quoteIconLeft} />
+      <h3 className={styles.motivationalStatement}>
+        To serve wholeheartedly, to venture bravely <br /> and to build with
+        determination.
+      </h3>
+      <FontAwesomeIcon icon={faQuoteRight} className={styles.quoteIconRight} />
     </div>
   );
 }
