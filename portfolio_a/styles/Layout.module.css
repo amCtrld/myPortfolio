@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .leftHalf, .rightHalf {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .leftHalf {
+    background-color: #070707;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .rightHalf {
+    background-color: #000000;
+    margin: 10px;
+    border-top: 2px solid #070707;
+    border-left: 2px solid #070707;
+    border-right: 2px solid #070707;
+    position: relative;
+  }
+  
+  .alias {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .photo {
+    height: 70%;
+    background-image: url('../Images/Profile.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: auto;
+  }
