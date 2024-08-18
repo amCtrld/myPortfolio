@@ -1,4 +1,3 @@
-// components/About.js
 import { useState, useEffect } from 'react';
 import styles from '../styles/About.module.css';
 

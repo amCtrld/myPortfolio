@@ -7,7 +7,7 @@
   font-size: 4rem;
   color: #444343;
   text-align: left;
-  margin-left: -80%;
+  margin-left: -70%;
   margin-bottom: 1rem;
 }
 
@@ -15,25 +15,39 @@
   font-size: 4rem;
   color: #444343;
   text-align: right;
-  margin-right: -80%;
+  margin-right: -70%;
 }
 
 .motivationalStatement {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  min-height: 3.5rem; /* Prevents layout shift as text is typed */
+  position: relative;
   color: #444343;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.name {
-  font-size: 2rem;
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.2em;
+  background-color: #444343;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+  position: relative;
+  top: 2px;
 }
 
-.introduction {
-  font-size: 1.2rem;
-}
-
-.alias {
-  font-style: italic;
-  color: #0070f3;
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
