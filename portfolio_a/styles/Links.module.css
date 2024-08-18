@@ -26,6 +26,11 @@
     color: #848383;
     opacity: 0;
     animation: fallIn 0.5s ease forwards;
+    transition: color 0.5s ease;
+  }
+
+  .icon:hover {
+    color: #000000;
   }
   
   @keyframes fallIn {
@@ -51,7 +56,7 @@
     display: inline-block;
     width: 3px;
     height: 1.2em;
-    background-color: #ffffff;
+    background-color: #848383;
     margin-left: 2px;
     animation: blink 0.7s infinite;
     position: relative;
@@ -81,5 +86,5 @@
     color: #000000;
     font-weight: bold;
     transform: scale(1.5);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
   }

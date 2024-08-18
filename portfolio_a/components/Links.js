@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/Links.module.css';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { SiSignal } from 'react-icons/si';
 
 export default function Links() {
@@ -10,10 +10,11 @@ export default function Links() {
   const peersText = "Peers";
 
   const socialLinks = [
-    { icon: <FaGithub />, url: 'https://github.com/yourusername' },
+    { icon: <FaGithub />, url: 'https://github.com/amCtrld' },
     { icon: <FaLinkedin />, url: 'https://linkedin.com/in/yourusername' },
-    { icon: <SiSignal />, url: 'https://signal.org/yourusername' },
-    { icon: <FaEnvelope />, url: 'mailto:your.email@example.com' },
+    { icon: <FaWhatsapp />, url: 'https://wa.me/qr/M5J3CYE2IYMJD1' },
+    { icon: <SiSignal />, url: 'https://signal.me/#eu/AtX2LiPQQiBvbjFx43FSH7JmI70FqYimW07u7GcUz7YOfxMD_ylMJZxWD4M-UmvQ' },
+    { icon: <FaEnvelope />, url: 'mailto:petrembugua@proton.me' },
   ];
 
   const peerLinks = [
