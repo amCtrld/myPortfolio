@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
 import Home from "../components/Home";
-import About from '../components/About';
+import About from "../components/About";
+import Works from "../components/Works";
+import Links from '../components/Links';
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState("Home");
@@ -12,6 +14,10 @@ export default function Index() {
         return <Home />;
       case "About":
         return <About />;
+      case "Works":
+        return <Works />;
+        case 'Links':
+          return <Links />;
 
       default:
         return <Home />;

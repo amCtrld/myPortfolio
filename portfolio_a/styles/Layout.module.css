@@ -10,16 +10,13 @@
 }
 
 .leftHalf {
-  background-color: #070707;
+  background-color: #040D12;
   padding: 10px;
   position: relative;
 }
 
 .rightHalf {
   background-color: #000000;
-  border-top: 2px solid #070707;
-  border-left: 2px solid #070707;
-  border-right: 2px solid #070707;
   position: relative;
   display: flex;
   justify-content: center;
@@ -43,18 +40,23 @@
 }
 
 .profile {
-  border-top: 3px solid #070707;
-  border-left: 3px solid #070707;
-  border-right: 3px solid #070707;
+  border-top: 3px solid #848383;
   padding: 20px;
   margin: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  height:80%;
+  height: 80%;
   width: 80%;
+
+  /* Gradient Borders */
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-image-source: linear-gradient(to bottom, #848383, #000000);
+  border-image-slice: 1;
 }
+
 
 .photo {
   height: 100%;
