@@ -1,20 +1,22 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
-import { useState, useEffect } from 'react';
-import styles from '../styles/Home.module.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { useState, useEffect } from "react";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [motivationalStatement] = useState(
     "To serve wholeheartedly,<br />to venture bravely and<br />to build with determination."
   );
-  const [displayedStatement, setDisplayedStatement] = useState('');
+  const [displayedStatement, setDisplayedStatement] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     if (currentIndex < motivationalStatement.length) {
       const timeoutId = setTimeout(() => {
-        setDisplayedStatement(prevContent => prevContent + motivationalStatement[currentIndex]);
-        setCurrentIndex(prevIndex => prevIndex + 1);
+        setDisplayedStatement(
+          (prevContent) => prevContent + motivationalStatement[currentIndex]
+        );
+        setCurrentIndex((prevIndex) => prevIndex + 1);
       }, 50);
 
       return () => clearTimeout(timeoutId);

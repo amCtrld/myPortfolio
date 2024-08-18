@@ -2,63 +2,65 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .typingEffect {
+}
+
+.typingEffect {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #848383;
-  }
-  
-  .cursor {
+}
+
+.cursor {
     display: inline-block;
     width: 3px;
     height: 1em;
     background-color: #848383;
     margin-left: 2px;
     animation: blink 0.7s infinite;
-  }
-  
-  @keyframes blink {
-    50% { opacity: 0; }
-  }
-  
-  .photoGrid {
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.photoGrid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     align-items: center;
-  }
-  
-  .photo {
+}
+
+.photo {
     width: 150px;
     height: 150px;
     overflow: hidden;
     transition: transform 0.3s ease;
     display: flex;
-  justify-content: center; /* Centers images inside the circle */
-  align-items: center; 
-  }
-  
-  .photo img {
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
     border-top: 3px solid #848383;
     border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  border-image-source: linear-gradient(to bottom, #848383, #040D12);
-  border-image-slice: 1;
-  }
-  
-  .photo:hover {
+    border-right: 3px solid transparent;
+    border-image-source: linear-gradient(to bottom, #848383, #040D12);
+    border-image-slice: 1;
+}
+
+.photo:hover {
     transform: scale(1.1);
     z-index: 1;
-  }
-  
-  .fullView {
+}
+
+.fullView {
     position: fixed;
     top: 0;
     left: 0;
@@ -72,19 +74,20 @@
     opacity: 0;
     transform: scale(0.9);
     transition: opacity 2s ease, transform 2s ease;
-    pointer-events: none; /* Prevent interaction while hidden */
-  }
-  
-  .fullView.show {
+    pointer-events: none;
+    /* Prevent interaction while hidden */
+}
+
+.fullView.show {
     opacity: 1;
     transform: scale(1);
-    pointer-events: auto; /* Allow interaction when visible */
-  }
-  
-  .fullView img {
+    pointer-events: auto;
+    /* Allow interaction when visible */
+}
+
+.fullView img {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
     transition: transform 2s ease;
-  }
-  
+}

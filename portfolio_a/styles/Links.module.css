@@ -1,93 +1,102 @@
 .links {
-    color: #ffffff;
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-  }
+  color: #ffffff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  .links h2 {
-    font-size: 2rem;
-    line-height: 1.6;
-    white-space: pre-wrap;
-    color: #848383;
-    margin-bottom: 10px;
-  }
-  
-  .socialLinks {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-  
-  .icon {
-    font-size: 2rem;
-    margin: 0 1rem;
-    color: #848383;
+.links h2 {
+  font-size: 2rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  color: #848383;
+  margin-bottom: 10px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  font-size: 2rem;
+  margin: 0 1rem;
+  color: #848383;
+  opacity: 0;
+  animation: fallIn 0.5s ease forwards;
+  transition: color 0.5s ease;
+}
+
+.icon:hover {
+  transform: rotate(360deg);
+  color: #000000;
+}
+
+@keyframes fallIn {
+  0% {
+    transform: translateY(-50px);
     opacity: 0;
-    animation: fallIn 0.5s ease forwards;
-    transition: color 0.5s ease;
   }
 
-  .icon:hover {
-    transform: rotate(360deg);
-    color: #000000;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  @keyframes fallIn {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+}
+
+.peers h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  min-height: 2.4rem;
+  position: relative;
+  margin-top: 5rem;
+  ;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.2em;
+  background-color: #848383;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+  position: relative;
+  top: 2px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
   }
-  
-  .peers h2 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    min-height: 2.4rem;
-    position: relative;
-    margin-top: 5rem;;
+
+  50% {
+    opacity: 1;
   }
-  
-  .cursor {
-    display: inline-block;
-    width: 3px;
-    height: 1.2em;
-    background-color: #848383;
-    margin-left: 2px;
-    animation: blink 0.7s infinite;
-    position: relative;
-    top: 2px;
+
+  100% {
+    opacity: 0;
   }
-  
-  @keyframes blink {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-  
-  .peerLinks {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
-  .peerLinks a {
-    color: #848383; /* Default color */
-    margin: 1rem;
-    text-decoration: none;
-    font-weight: normal; /* Default font weight */
-    transform: scale(1); /* Default scale */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for both transform and color */
-  }
-  
-  .peerLinks a:hover {
-    color: #000000;
-    font-weight: bold;
-    transform: scale(1.5); /* Scale up on hover */
-  }
-  
+}
+
+.peerLinks {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.peerLinks a {
+  color: #848383;
+  margin: 1rem;
+  text-decoration: none;
+  font-weight: normal;
+  transform: scale(1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.peerLinks a:hover {
+  color: #000000;
+  font-weight: bold;
+  transform: scale(1.5);
+}
