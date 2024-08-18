@@ -6,6 +6,7 @@ export default function Layout({ children, activeSection, setActiveSection }) {
     <div className={styles.container}>
       <div className={styles.leftHalf}>
         <div className={styles.alias}>amCtrld</div>
+        <div className={styles.avatar}></div> {}
         <main className={styles.content}>{children}</main>
       </div>
       <div className={styles.rightHalf}>

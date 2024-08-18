@@ -1,6 +1,7 @@
 .container {
   display: flex;
   height: 100vh;
+  background-color: #000000;
 }
 
 .leftHalf, .rightHalf {
@@ -13,6 +14,7 @@
   background-color: #040D12;
   padding: 10px;
   position: relative;
+  margin: 3rem;
 }
 
 .rightHalf {
@@ -23,12 +25,30 @@
   align-items: center;
 }
 
+.avatar {
+  width: 1.5rem; /* Adjust size as needed */
+  height: 1.5rem; /* Adjust size as needed */
+  background-image: url('../Images/avatar.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+}
+
+.avatar:hover{
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
+}
+
 .alias {
   position: absolute;
-  top: 1rem;
+  top: 2rem;
   left: 1rem;
   font-size: 1rem;
   font-weight: bold;
+  color: #848383;
 }
 
 .content {
@@ -56,7 +76,6 @@
   border-image-source: linear-gradient(to bottom, #848383, #000000);
   border-image-slice: 1;
 }
-
 
 .photo {
   height: 100%;

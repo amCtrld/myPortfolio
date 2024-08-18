@@ -18,7 +18,7 @@ export default function Links() {
   ];
 
   const peerLinks = [
-    { name: 'Bravo', url: '#' },
+    { name: 'Nowayte', url: 'https://se.nowayte.tech/' },
     { name: 'Alpha', url: '#' },
     { name: 'Zulu', url: '#' },
   ];
