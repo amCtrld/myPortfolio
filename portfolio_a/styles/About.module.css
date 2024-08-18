@@ -1,0 +1,48 @@
+.about {
+    color: #ffffff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:#848383;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    color: #848383;
+  }
+
+  .typingEffect {
+    font-size: 1rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background-color: #ffffff;
+    margin-left: 3px;
+    animation: blink 0.5s infinite;
+    position: relative;
+    top: 2px;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
