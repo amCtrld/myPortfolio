@@ -1,0 +1,107 @@
+.emailFormContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.emailForm {
+    background-color: #000000;
+    border: 1px solid #040D12;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.emailForm h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 10px;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    transition: border-color 0.3s ease;
+    background-color: #040D12;
+    color: #848383;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #0070f3;
+    outline: none;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 50px;
+}
+
+.button {
+    background-color: #0070f3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+.error,
+.success {
+    color: #e53e3e;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.success {
+    color: #38a169;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #777;
+    transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+    color: #333;
+}

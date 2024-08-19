@@ -28,7 +28,7 @@
 
 .navLink:hover,
 .navLink.active {
-  color: #040D12;
+  color: #0070f3;
   font-weight: bold;
   font-size: 1rem;
   transition: 500ms;

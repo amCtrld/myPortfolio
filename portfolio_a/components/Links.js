@@ -1,11 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "../styles/Links.module.css";
 import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { SiSignal } from "react-icons/si";
+import EmailForm from "./EmailForm";
 
 export default function Links() {
   const [displayedPeers, setDisplayedPeers] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showEmailForm, setShowEmailForm] = useState(false);
+  const formRef = useRef(null);
+
   const header = "Links";
   const peersText = "Peers";
 
@@ -17,7 +21,7 @@ export default function Links() {
       icon: <SiSignal />,
       url: "https://signal.me/#eu/AtX2LiPQQiBvbjFx43FSH7JmI70FqYimW07u7GcUz7YOfxMD_ylMJZxWD4M-UmvQ",
     },
-    { icon: <FaEnvelope />, url: "mailto:petrembugua@proton.me" },
+    { icon: <FaEnvelope />, onClick: () => setShowEmailForm(true) },
   ];
 
   const peerLinks = [
@@ -39,6 +43,20 @@ export default function Links() {
     }
   }, [currentIndex]);
 
+  // Close the form when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (formRef.current && !formRef.current.contains(event.target)) {
+        setShowEmailForm(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [formRef]);
+
   return (
     <div className={styles.links}>
       <h2>Links</h2>
@@ -51,6 +69,7 @@ export default function Links() {
             rel="noopener noreferrer"
             className={styles.icon}
             style={{ animationDelay: `${index * 0.2}s` }}
+            onClick={link.onClick}
           >
             {link.icon}
           </a>
@@ -69,6 +88,13 @@ export default function Links() {
           ))}
         </div>
       </div>
+      {showEmailForm && (
+        <div className={styles.overlay}>
+          <div ref={formRef} className={styles.formContainer}>
+            <EmailForm closeForm={() => setShowEmailForm(false)} />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
