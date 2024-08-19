@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
+import WeatherWidget from './WeatherWidget';
 
 export default function Home() {
   const [motivationalStatement] = useState(
@@ -31,6 +32,7 @@ export default function Home() {
         <span className={styles.cursor}></span>
       </h3>
       <FontAwesomeIcon icon={faQuoteRight} className={styles.quoteIconRight} />
+      <WeatherWidget />
     </div>
   );
 }

@@ -1,0 +1,40 @@
+/* styles/WeatherWidget.module.css */
+.weatherWidget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    bottom: 3rem; /* Distance from the bottom */
+    left: 25%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensures it stays on top of other elements */
+  }
+  
+  .location {
+    font-weight: bold;
+    color: #848383;
+  }
+  
+  .temperature {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    color: #848383;
+  }
+  
+  .condition {
+    display: flex;
+    align-items: center;
+    color: #848383;
+  }
+  
+  .condition img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
