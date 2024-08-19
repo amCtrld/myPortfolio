@@ -1,6 +1,5 @@
-// components/WeatherWidget.js
-import { useState, useEffect } from 'react';
-import styles from '../styles/WeatherWidget.module.css';
+import { useState, useEffect } from "react";
+import styles from "../styles/WeatherWidget.module.css";
 
 export default function WeatherWidget() {
   const [weatherData, setWeatherData] = useState(null);
@@ -10,7 +9,7 @@ export default function WeatherWidget() {
   useEffect(() => {
     const fetchWeather = async () => {
       const API_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
-      const CITY = 'Kerugoya'; // Replace with your preferred location
+      const CITY = "Kerugoya";
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric`;
 
       try {
@@ -22,8 +21,8 @@ export default function WeatherWidget() {
         setWeatherData(data);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching weather data:', error);
-        setError('Failed to fetch weather data');
+        console.error("Error fetching weather data:", error);
+        setError("Failed to fetch weather data");
         setLoading(false);
       }
     };
@@ -31,9 +30,14 @@ export default function WeatherWidget() {
     fetchWeather();
   }, []);
 
-  if (loading) return <div className={styles.weatherWidget}>Loading weather...</div>;
+  if (loading)
+    return <div className={styles.weatherWidget}>Loading weather...</div>;
   if (error) return <div className={styles.weatherWidget}>{error}</div>;
-  if (!weatherData || !weatherData.weather || weatherData.weather.length === 0) {
+  if (
+    !weatherData ||
+    !weatherData.weather ||
+    weatherData.weather.length === 0
+  ) {
     return <div className={styles.weatherWidget}>Weather data unavailable</div>;
   }
 
