@@ -12,43 +12,37 @@
   color: #848383;
 }
 
-.cardsContainer {
+.slideshowContainer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
   position: relative;
 }
 
 .card {
   width: 80%;
-  max-width: 300px;
-  min-width: 200px;
-  margin: 0 10px;
+  width: 50vh;
+  margin: 0 20px;
   transition: transform 0.3s ease, opacity 0.3s ease;
   cursor: pointer;
   position: relative;
-  opacity: 0.5;
-}
-
-.activeCard {
-  transform: scale(1.05);
   opacity: 1;
 }
 
 .cardImage {
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 300px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
 .cardContent {
-  background: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
+  background: rgba(0, 0, 0, 0.9);
+  color: #848383;
   width: 100%;
+  margin: 5px;
   padding: 10px;
   box-sizing: border-box;
   text-align: left;
@@ -57,9 +51,30 @@
 .cardContent h3 {
   margin: 0;
   font-size: 1.2rem;
+  text-decoration: none;
 }
 
 .cardContent p {
   margin: 5px 0 0;
   font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  color: #848383;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navButton:hover {
+  color: #ffffff;
 }
