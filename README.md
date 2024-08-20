@@ -1,32 +1,21 @@
-# Project Description: Personal Portfolio
+# Web Portfolio
 
-## Project Directory
+## Aim
 
-/pages
-  _app.js
-  _document.js
-  index.js
-/components
-  Layout.js
-  Navigation.js
-  Home.js
-  About.js
-  Links.js
-  Photos.js
-  WeatherWidget.js
-  Works.js
-/styles
-  globals.css
-  Layout.module.css
-  Navigation.module.css
-  Home.module.css
-  About.module.css
-  Links.module.css
-  Photos.module.css
-  WeatherWidget.module.css
-  Works.module.css
-/Images
-/Public
-  /Images
-  favicon.png
-  
+My Aim is to create a minimalistic, dark portfolio design and later implement it.
+
+## Technologies
+
+As a JavaScript Developer, I plan to stick with JavaScript technologies as far as I can.
+
+So far, the build technologies are:
+
+- Next.js
+- APIs
+  - OpenWeather
+  - EmailJS
+
+## Misc
+
+- amCtrld portfolio is primarily front-end.
+- The project generates content dynamically in place of multiple pages/sections.
