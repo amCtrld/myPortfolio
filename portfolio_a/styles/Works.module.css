@@ -1,5 +1,5 @@
 .works {
-  color: #ffffff;
+  color: #848383;
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -47,6 +47,11 @@
   padding: 10px;
   box-sizing: border-box;
   text-align: left;
+}
+
+.cardContent:hover{
+  background: #040D12;
+  border-radius: 0px;
 }
 
 .cardContent h3 {
