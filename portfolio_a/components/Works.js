@@ -21,7 +21,7 @@ export default function Works() {
       id: 2,
       title: "Vitabu",
       description: "A social platform for book lovers to connect and share their passion.",
-      image: "../Images/Bed2.jpeg",
+      image: "../Images/vitabu.w.png",
       link: "https://link-to-project2.com",
     },
     {
