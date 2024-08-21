@@ -15,21 +15,21 @@ export default function Works() {
       title: "Mchango",
       description: "A digital platform to facilitate and manage charitable donations.",
       image: "../Images/mchango.png",
-      link: "https://link-to-project1.com",
+      link: "https://github.com/amCtrld/Mchango",
     },
     {
       id: 2,
       title: "Vitabu",
       description: "A social platform for book lovers to connect and share their passion.",
       image: "../Images/vitabu.w.png",
-      link: "https://link-to-project2.com",
+      link: "https://github.com/amCtrld/Vitabu",
     },
     {
       id: 3,
       title: "Misuli",
       description: "A web application for managing gym operations and member data.",
       image: "../Images/Bed3.jpeg",
-      link: "https://link-to-project3.com",
+      link: "https://github.com/amCtrld/Misuli",
     },
   ];
 
