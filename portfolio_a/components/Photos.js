@@ -10,7 +10,7 @@ export default function Photos() {
     { src: "../Images/amCtrld1.jpg", alt: "Photo 1" },
     { src: "../Images/amCtrld2.jpg", alt: "Photo 2" },
     { src: "../Images/Photo1.png", alt: "Photo 3" },
-    { src: "../Images/Bed4.jpeg", alt: "Photo 4" },
+    { src: "../Images/setup.jpg", alt: "Photo 4" },
     { src: "../Images/Bed5.jpeg", alt: "Photo 5" },
     { src: "../Images/Bed1.jpeg", alt: "Photo 6" },
   ];
