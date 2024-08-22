@@ -7,8 +7,8 @@ export default function Photos() {
   const [activePhoto, setActivePhoto] = useState(null);
 
   const photos = [
-    { src: "../Images/Bed1.jpeg", alt: "Photo 1" },
-    { src: "../Images/Bed2.jpeg", alt: "Photo 2" },
+    { src: "../Images/amCtrld1.jpg", alt: "Photo 1" },
+    { src: "../Images/amCtrld2.jpg", alt: "Photo 2" },
     { src: "../Images/Bed3.jpeg", alt: "Photo 3" },
     { src: "../Images/Bed4.jpeg", alt: "Photo 4" },
     { src: "../Images/Bed5.jpeg", alt: "Photo 5" },

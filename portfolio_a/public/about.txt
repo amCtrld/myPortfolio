@@ -1,10 +1,10 @@
-An Electronics and Engineering Student;
+- An Electronics and Computer Engineering Student;
 
-Design enthusiast, passionate about crafting user-centric experiences;
-both the aesthetic and functional aspects of creation.
+- Design enthusiast, passionate about crafting user-centric experiences;
+  both the aesthetic and functional aspects of creation.
 
-Eager to explore the potential of IoT and robotics in creating innovative solutions.
-And who said they cannot use JavaScript?
+- Eager to explore the potential of IoT and robotics in creating innovative solutions.
+  And who said they cannot use JavaScript?
 
-I enjoy photography, chess, cycling,
-and the occasional competitive gaming session.
+- I enjoy photography, chess, cycling,
+  and the occasional competitive gaming session.
