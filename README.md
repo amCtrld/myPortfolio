@@ -18,5 +18,4 @@ So far, the build technologies are:
 ## Misc
 
 - amCtrld portfolio is primarily front-end.
-- The project generates content dynamically in place of multiple pages/sections.
 - More APIs coming soon
