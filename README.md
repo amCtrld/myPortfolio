@@ -19,4 +19,4 @@ So far, the build technologies are:
 
 - amCtrld portfolio is primarily front-end.
 - I will add backend section when I venture into backend development.
-- More APIs coming soon
+- More APIs coming soon.
