@@ -8,9 +8,9 @@
     margin-top: 20px;
     font-size: 0.9rem;
     backdrop-filter: blur(5px);
-    position: fixed;
+    position: absolute;
     bottom: 3rem;
-    left: 25%;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
 }
@@ -37,3 +37,9 @@
     height: 30px;
     margin-right: 5px;
 }
+
+@media (max-width: 600px) {
+    .weatherWidget{
+        left: 50%;
+    }
+  }

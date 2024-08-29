@@ -33,3 +33,13 @@
   font-size: 1rem;
   transition: 500ms;
 }
+
+@media (max-width: 600px) {
+  .navList {
+    margin-top: 3rem;
+  }
+
+  .navItem {
+    margin-bottom: 1rem;
+  }
+}
