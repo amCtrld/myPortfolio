@@ -9,10 +9,10 @@ export default function Photos() {
   const photos = [
     { src: "../Images/amCtrld1.jpg", alt: "Photo 1" },
     { src: "../Images/amCtrld2.jpg", alt: "Photo 2" },
-    { src: "../Images/Photo1.png", alt: "Photo 3" },
-    { src: "../Images/setup.jpg", alt: "Photo 4" },
-    { src: "../Images/Bed5.jpeg", alt: "Photo 5" },
-    { src: "../Images/Bed1.jpeg", alt: "Photo 6" },
+    { src: "../Images/20220306_122549.jpg", alt: "Photo 3" },
+    { src: "../Images/hv~2.jpg", alt: "Photo 4" },
+    { src: "../Images/IMG_20240201_204829.jpg", alt: "Photo 5" },
+    { src: "../Images/me2~2.jpg", alt: "Photo 6" },
   ];
 
   useEffect(() => {
