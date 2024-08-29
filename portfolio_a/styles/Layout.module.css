@@ -28,9 +28,7 @@
 
 .avatar {
   width: 1.5rem;
-  /* Adjust size as needed */
   height: 1.5rem;
-  /* Adjust size as needed */
   background-image: url('../Images/avatar.jpg');
   background-size: cover;
   background-position: center;
@@ -121,13 +119,21 @@
   }
 
   .avatar{
-    left: 2rem;
+    left: 48%;
     height: 3rem;
     width: 3rem;
-    animation: rotate 1s linear infinite;
+    animation: rotate 2s linear infinite;
   }
   .alias{
     display: none;
+  }
+
+  .name{
+    font-size: 1.5rem;
+  }
+
+  .introduction{
+    font-size: 0.8rem;
   }
 
   @keyframes rotate {

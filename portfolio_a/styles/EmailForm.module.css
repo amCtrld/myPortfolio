@@ -105,3 +105,13 @@
 .closeButton:hover {
     color: #333;
 }
+
+@media (max-width: 768px) {
+    .emailForm {
+        border-top: 3px solid #848383;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-image-source: linear-gradient(to bottom, #040D12, #000000);
+        border-image-slice: 1;
+    }
+}

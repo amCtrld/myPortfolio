@@ -23,7 +23,6 @@
   font-weight: bold;
   margin-bottom: 1rem;
   min-height: 3.5rem;
-  /* Prevents layout shift as text is typed */
   position: relative;
   color: #848383;
   padding-left: 30px;
@@ -53,5 +52,15 @@
 
   100% {
     opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .motivationalStatement {
+    font-size: 1rem;
+  }
+
+  .quoteIconLeft, .quoteIconRight {
+    font-size: 2rem;
   }
 }

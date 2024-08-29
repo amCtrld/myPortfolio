@@ -91,3 +91,11 @@
     object-fit: contain;
     transition: transform 2s ease;
 }
+
+@media (max-width: 768px) {
+    .typingEffect {
+        font-size: 1rem;
+        margin-top: 5rem;
+    }
+
+}
