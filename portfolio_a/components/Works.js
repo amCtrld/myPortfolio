@@ -14,7 +14,7 @@ export default function Works() {
       id: 1,
       title: "Mchango",
       description: "A digital platform to facilitate and manage charitable donations.",
-      image: "../Images/mchango.png",
+      image: "../Images/mchango.jpg",
       link: "https://github.com/amCtrld/Mchango",
     },
     {

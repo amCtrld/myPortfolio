@@ -3,6 +3,18 @@
   color: #ffffff;
 }
 
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-image: url('../Images/avatar.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 2rem;
+  left: 45%;
+}
+
 .quoteIconLeft {
   font-size: 4rem;
   color: #444343;

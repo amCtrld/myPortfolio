@@ -26,6 +26,7 @@ export default function Home() {
 
   return (
     <div className={styles.home}>
+      <div className={styles.avatar}></div> {}
       <FontAwesomeIcon icon={faQuoteLeft} className={styles.quoteIconLeft} />
       <h3 className={styles.motivationalStatement}>
         <span dangerouslySetInnerHTML={{ __html: displayedStatement }} />

@@ -39,10 +39,9 @@
 }
 
 .cardContent {
-  background: rgba(0, 0, 0, 0.9);
+  background: #040D12;
   color: #848383;
   width: 100%;
-  border-radius: 20px;
   margin: 5px;
   padding: 10px;
   box-sizing: border-box;
@@ -50,8 +49,8 @@
 }
 
 .cardContent:hover {
-  background: #040D12;
-  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.9);;
+  border-radius: 20px;
 }
 
 .cardContent h3 {
@@ -98,7 +97,7 @@
   }
 
   .cardImage {
-    height: 200px;
+    height: 300px;
   }
 
   .cardContent {

@@ -18,7 +18,8 @@ export default function Layout({ children, activeSection, setActiveSection }) {
           <div className={styles.photo}></div>
           <div className={styles.title}>
             <h2 className={styles.name}>Peter Mbugua</h2>
-            <p className={styles.introduction}>JavaScript Developer</p>
+            <p className={styles.minialias}>[ amCtrld ]</p>
+            <p className={styles.introduction}>JS Developer</p>
           </div>
         </div>
       </div>
