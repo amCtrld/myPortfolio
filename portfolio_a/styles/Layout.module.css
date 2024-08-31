@@ -108,6 +108,12 @@
 }
 
 @media (max-width: 768px) {
+  .rightHalf{
+    max-height: 1px;
+  }
+  .profile{
+    display: none;
+  }
   .container {
     flex-direction: column;
   }

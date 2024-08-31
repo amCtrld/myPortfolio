@@ -4,15 +4,7 @@
 }
 
 .avatar {
-  width: 5rem;
-  height: 5rem;
-  background-image: url('../Images/avatar.jpg');
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 2rem;
-  left: 45%;
+  display: none;
 }
 
 .quoteIconLeft {
@@ -69,10 +61,39 @@
 
 @media (max-width: 768px) {
   .motivationalStatement {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    bottom: -8rem;
   }
 
-  .quoteIconLeft, .quoteIconRight {
+  .quoteIconLeft,
+  .quoteIconRight {
     font-size: 2rem;
+    display: none;
+  }
+
+  .avatar {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-image: url('../Images/avatar.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    left: 45%;
+  }
+
+  .profPic{
+    display: block;
+    width: 60%;
+    height: 30%;
+    background-image: url('..//Images/Profile.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    left: 20%;
   }
 }

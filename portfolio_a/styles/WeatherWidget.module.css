@@ -41,5 +41,6 @@
 @media (max-width: 600px) {
     .weatherWidget{
         left: 50%;
+        bottom: 6rem;
     }
   }

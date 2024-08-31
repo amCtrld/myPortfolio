@@ -28,7 +28,7 @@ export default function Works() {
       id: 3,
       title: "Misuli",
       description: "A web application for managing gym operations and member data.",
-      image: "../Images/Bed3.jpeg",
+      image: "../Images/misuli.jpg",
       link: "https://github.com/amCtrld/Misuli",
     },
   ];
