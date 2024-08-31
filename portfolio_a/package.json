@@ -6,7 +6,8 @@
     "dev": "HOST=0.0.0.0 next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prebuild": "rm -rf .next"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",

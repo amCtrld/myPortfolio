@@ -15,7 +15,7 @@ export default function Links() {
 
   const socialLinks = [
     { icon: <FaGithub />, url: "https://github.com/amCtrld" },
-    { icon: <FaLinkedin />, url: "https://linkedin.com/in/yourusername" },
+    { icon: <FaLinkedin />, url: "#" },
     { icon: <FaWhatsapp />, url: "https://wa.me/qr/M5J3CYE2IYMJD1" },
     {
       icon: <SiSignal />,
@@ -26,8 +26,6 @@ export default function Links() {
 
   const peerLinks = [
     { name: "Nowayte", url: "https://se.nowayte.tech/" },
-    { name: "Alpha", url: "#" },
-    { name: "Zulu", url: "#" },
   ];
 
   useEffect(() => {
