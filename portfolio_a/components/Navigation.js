@@ -1,5 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faBriefcase, faLink, faImages } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faUser,
+  faBriefcase,
+  faLink,
+  faImages,
+} from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/Navigation.module.css";
 
 export default function Navigation({ activeSection, setActiveSection }) {
@@ -8,7 +14,7 @@ export default function Navigation({ activeSection, setActiveSection }) {
     { icon: faUser, label: "About" },
     { icon: faBriefcase, label: "Works" },
     { icon: faLink, label: "Links" },
-    { icon: faImages, label: "Photos" }
+    { icon: faImages, label: "Photos" },
   ];
 
   return (
