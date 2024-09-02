@@ -5,7 +5,7 @@ import styles from "../styles/EmailForm.module.css";
 export default function EmailForm({ closeForm }) {
   const [formData, setFormData] = useState({
     name: "",
-    user_email: "", // Ensure this matches your template
+    user_email: "",
     title: "",
     message: "",
   });
@@ -101,7 +101,7 @@ export default function EmailForm({ closeForm }) {
               className={styles.input}
               type="email"
               id="email"
-              name="user_email" // Match this with your template placeholder
+              name="user_email"
               value={formData.user_email}
               onChange={handleChange}
               required

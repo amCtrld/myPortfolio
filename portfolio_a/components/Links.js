@@ -24,9 +24,7 @@ export default function Links() {
     { icon: <FaEnvelope />, onClick: () => setShowEmailForm(true) },
   ];
 
-  const peerLinks = [
-    { name: "Nowayte", url: "https://se.nowayte.tech/" },
-  ];
+  const peerLinks = [{ name: "Nowayte", url: "https://se.nowayte.tech/" }];
 
   useEffect(() => {
     if (currentIndex < peersText.length) {
