@@ -16,7 +16,7 @@ export default function Links() {
   const socialLinks = [
     { icon: <FaGithub />, url: "https://github.com/amCtrld" },
     { icon: <FaLinkedin />, url: "#" },
-    { icon: <FaWhatsapp />, url: "https://wa.me/qr/M5J3CYE2IYMJD1" },
+    { icon: <FaWhatsapp />, url: "https://wa.me/+254768533008" },
     {
       icon: <SiSignal />,
       url: "https://signal.me/#eu/AtX2LiPQQiBvbjFx43FSH7JmI70FqYimW07u7GcUz7YOfxMD_ylMJZxWD4M-UmvQ",
