@@ -12,24 +12,17 @@ export default function Works() {
   const worksData = [
     {
       id: 1,
-      title: "Mchango",
-      description: "A digital platform to facilitate and manage charitable donations.",
-      image: "../Images/mchango.jpg",
-      link: "https://github.com/amCtrld/Mchango",
+      title: "Nijue",
+      description: "nijue lets professionals share their story through a timeline, video, and AI-powered summary",
+      image: "../Images/nijue.png",
+      link: "https://nijue.vercel.app",
     },
     {
       id: 2,
-      title: "Vitabu",
-      description: "A social platform for book lovers to connect and share their passion.",
-      image: "../Images/vitabu.w.png",
-      link: "https://github.com/amCtrld/Vitabu",
-    },
-    {
-      id: 3,
-      title: "Misuli",
-      description: "A web application for managing gym operations and member data.",
-      image: "../Images/misuli.jpg",
-      link: "https://github.com/amCtrld/Misuli",
+      title: "BowlRMS",
+      description: "A modern Restaurant management and digital menu system",
+      image: "../Images/bowl.png",
+      link: "https://bowlrms.com",
     },
   ];
 
