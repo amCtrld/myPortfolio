@@ -6,7 +6,7 @@ import WeatherWidget from "./WeatherWidget";
 
 export default function Home() {
   const [motivationalStatement] = useState(
-    "To serve wholeheartedly,<br />to venture bravely and<br />to build with determination."
+    "To give wholeheartedly,<br />to venture bravely and<br />to build with determination."
   );
   const [displayedStatement, setDisplayedStatement] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
