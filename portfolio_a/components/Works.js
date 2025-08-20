@@ -24,6 +24,13 @@ export default function Works() {
       image: "../Images/bowl.png",
       link: "https://bowlrms.com",
     },
+    {
+      id: 3,
+      title: "ScanKnock",
+      description: "A QR Code accessed simple messaging platform. Scan, and leave your message!",
+      image: "../Images/scanknock.png",
+      link: "https://scanknock.vercel.app",
+    },
   ];
 
   const handleNext = () => {
